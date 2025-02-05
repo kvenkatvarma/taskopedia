@@ -5,13 +5,19 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 function MainBody(){
   const course = "React JS";
+  const lectureCount = 3;
   return(
     <div>
-      <p>In this course, we will learn {course} by building Taskopedia</p>
+      <p>In this course, we will learn {course} by building Taskopedia <br/>
+      Total lecture - {lectureCount}
+      </p>
       <ul>
         <li>Basic Foundation</li>
         <li>Functional and Class Components</li>
       </ul>
+      <div>
+        Enter Task : <input  maxLength={5} readOnly={false} placeholder='Ben'></input>
+      </div>
     </div>
   )
 }
