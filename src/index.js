@@ -14,10 +14,7 @@ function MainBody(){
       <ul>
         <li>Basic Foundation</li>
         <li>Functional and Class Components</li>
-      </ul>
-      <div>
-        Enter Task : <input  maxLength={5} readOnly={false} placeholder='Ben'></input>
-      </div>
+      </ul>    
     </div>
   )
 }
@@ -49,6 +46,26 @@ function SubHeader(){
   )
 }
 
+function Students(){
+  const fullName = "Venkat varma";
+  const programmingExp = 2;
+  return(
+    <div className='container p-4'>
+       <div className='row'>
+         Students Enrolled
+         </div>
+         <div className='row border'>
+             <div className='col-2'>
+               <img src={`https://ui-avatars.com/api/?name= ${fullName}`}></img>
+             </div>
+             <div className='col-10'>
+                {fullName} <br/>
+                Coding Experience {programmingExp} years
+             </div>
+         </div>
+    </div>
+  )
+}
 function Footer(){
   return(
     <p style={{color:"gray",backgroundColor:"black"}}>Happy Coding!</p>
@@ -58,6 +75,7 @@ root.render(
  <div>
   <Header />
     <MainBody/>
+    <Students />
     <Footer />
  </div>
 );
