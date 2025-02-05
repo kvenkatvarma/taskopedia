@@ -1,34 +1,13 @@
 import ReactDOM from 'react-dom/client';
 import "./CSS/style.css";
-import Header from './Header';
+import Header from './Layout/Header';
 import Student from './Student';
-
+import Footer from './Layout/Footer';
+import MainBody from './MainBody';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-function MainBody(){
-  const course = "React JS";
-  const lectureCount = 3;
-  return(
-    <div>
-      <p>In this course, we will learn {course} by building Taskopedia <br/>
-      Total lecture - {lectureCount}
-      </p>
-      <ul>
-        <li>Basic Foundation</li>
-        <li>Functional and Class Components</li>
-      </ul>    
-    </div>
-  )
-}
-
-
-function Footer(){
-  return(
-    <p style={{color:"gray",backgroundColor:"black"}}>Happy Coding!</p>
-  )
-}
 root.render(
- <div className=''>
+ <div style={{ backgroundColor: "black", color: "grey" }}>
   <Header />
     <MainBody/>
     <div className='container row'>Students Enrolled</div>
