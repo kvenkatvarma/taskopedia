@@ -4,16 +4,18 @@ import "./CSS/style.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 function MainBody(){
+  const course = "React JS";
   return(
     <div>
-      <p>In this course, we will learn react js by building Taskopedia</p>
+      <p>In this course, we will learn {course} by building Taskopedia</p>
       <ul>
-        <li>Call Ben</li>
-        <li>Go to walmart</li>
+        <li>Basic Foundation</li>
+        <li>Functional and Class Components</li>
       </ul>
     </div>
   )
 }
+
 
 function MainHeader(){
   return(
