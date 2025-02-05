@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import "./CSS/style.css";
+import Header from './header';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -19,32 +20,6 @@ function MainBody(){
   )
 }
 
-
-function MainHeader(){
-  return(
-    <h1 className='heading1'>REACT COURSE</h1>
-  )
-}
-
-function Header(){
-  return(
-    <div>
-          <MainHeader />
-          <SubHeader />
-    </div>
- 
-  )
-}
-
-const subHeaderStyle ={
-  color:"blueviolet",
-  backgroundColor:"lightgray"
-}
-function SubHeader(){
-  return(
-    <p style={subHeaderStyle}>This will be an exciting course</p>
-  )
-}
 
 function Students(){
   const fullName = "Venkat varma";
