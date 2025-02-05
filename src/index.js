@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import "./CSS/style.css";
 import Header from './Header';
-import Students from './Students';
+import Student from './Student';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -28,10 +28,14 @@ function Footer(){
   )
 }
 root.render(
- <div>
+ <div className='container'>
   <Header />
     <MainBody/>
-    <Students />
+    <div className='row'>Students Enrolled</div>
+    <Student experience ={2} name= "Venkat Varma" />
+    <Student experience ={1} name= "Durgambica" />
+    <Student experience ={2} name= "Sri Nitya" />
+
     <Footer />
  </div>
 );
