@@ -31,15 +31,19 @@ function Header(){
   )
 }
 
+const subHeaderStyle ={
+  color:"blueviolet",
+  backgroundColor:"lightgray"
+}
 function SubHeader(){
   return(
-    <p>This will be an exciting course</p>
+    <p style={subHeaderStyle}>This will be an exciting course</p>
   )
 }
 
 function Footer(){
   return(
-    <p>Happy Coding!</p>
+    <p style={{color:"gray",backgroundColor:"black"}}>Happy Coding!</p>
   )
 }
 root.render(
