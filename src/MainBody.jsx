@@ -1,6 +1,6 @@
 
-import Student from './Student';
-import StudentReview from './StudentReview';
+import Student from './Components/Student/Student';
+import StudentReview from './Components/Student/StudentReview';
 function MainBody(){
   const course = "React JS";
   const lectureCount = 3;
