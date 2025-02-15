@@ -21,7 +21,7 @@ function MainHeader(){
     )
   }
   
-  export default function Header(){
+const Header=()=>{
     return(
       <div>
             <MainHeader />
@@ -29,5 +29,6 @@ function MainHeader(){
       </div> 
     )
   }
+  export default Header;
 
    
